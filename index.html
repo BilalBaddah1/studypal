@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StudyPal Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📚 StudyPal</h1>
+
+    <!-- To-Do Section -->
+    <section>
+      <h2>📝 To-Do List</h2>
+      <input type="text" id="taskInput" placeholder="New task..." />
+      <button onclick="addTask()">Add</button>
+      <ul id="taskList"></ul>
+    </section>
+
+    <!-- Pomodoro Timer -->
+    <section>
+      <h2>⏱️ Pomodoro Timer</h2>
+      <div id="timer">25:00</div>
+      <button onclick="startTimer()">Start</button>
+      <button onclick="resetTimer()">Reset</button>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
